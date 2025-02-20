@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Goal</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="btn-goal">
+        <button class="btn1 btn">All</button>
+        <button class="btn2 btn">Active</button>
+        <button class="btn3 btn">Inactive</button>
+      </div>
+      <div class="progress-container">
+        <div class="progress-wrapper">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle
+              class="progress"
+              cx="60"
+              cy="60"
+              r="50"
+              style="stroke-dashoffset: calc(314 - (20 / 100) * 314)"
+            ></circle>
+
+            <text x="60" y="65" class="progress-text">3</text>
+          </svg>
+
+          <p class="progress-description">Stress Level</p>
+        </div>
+        <div class="progress-wrapper">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle
+              class="progress"
+              cx="60"
+              cy="60"
+              r="50"
+              style="stroke-dashoffset: calc(314 - (75 / 100) * 314)"
+            ></circle>
+            <text x="60" y="65" class="progress-text">7</text>
+          </svg>
+          <p class="progress-description">Focus Quality</p>
+        </div>
+
+        <!-- Progress Bar 3 (90%) -->
+        <div class="progress-wrapper">
+          <svg width="120" height="120" viewBox="0 0 120 120">
+            <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+            <circle
+              class="progress"
+              cx="60"
+              cy="60"
+              r="50"
+              style="stroke-dashoffset: calc(314 - (90 / 100) * 314)"
+            ></circle>
+            <text x="60" y="65" class="progress-text">9</text>
+          </svg>
+          <p class="progress-description">Time in flow state</p>
+        </div>
+      </div>
+      <div class="input-container">
+        <div class="inner-container">
+          <div class="field">
+            <label for="">Challenges faced</label>
+            <input type="text" placeholder="Input field" />
+          </div>
+          <div class="field">
+            <label for="">Success stories</label>
+            <input type="text" placeholder="Input field" />
+          </div>
+        </div>
+      </div>
+
+      <table>
+        <tr>
+          <td>
+            <div class="progress-table-container">
+              <svg width="100" height="100" viewBox="0 0 120 120">
+                <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+                <circle
+                  class="progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="stroke-dashoffset: calc(314 - (80 / 100) * 314)"
+                ></circle>
+                <text x="60" y="65" class="progress-text">8</text>
+              </svg>
+            </div>
+          </td>
+          <td>
+            <div class="info-box">
+              <span class="text"
+                >Achieve 2-3 hours of focused deep work daily</span
+              >
+              <div class="icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="progress-table-container">
+              <svg width="100" height="100" viewBox="0 0 120 120">
+                <circle class="progress-bg" cx="60" cy="60" r="50"></circle>
+                <circle
+                  class="progress"
+                  cx="60"
+                  cy="60"
+                  r="50"
+                  style="stroke-dashoffset: calc(314 - (50 / 100) * 314)"
+                ></circle>
+                <text x="60" y="65" class="progress-text">5</text>
+              </svg>
+            </div>
+          </td>
+          <td>
+            <div class="info-box">
+              <span class="text"
+                >Create optimal environment for flow states</span
+              >
+              <div class="icons">
+                <i class="fas fa-bell"></i>
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <div class="info-box goal-box">
+              <div class="icons">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <span class="text goal">Add Goal</span>
+              <div class="icons">
+                <i class="fas fa-chevron-right"></i>
+              </div>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
