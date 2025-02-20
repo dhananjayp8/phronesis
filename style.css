@@ -90,8 +90,7 @@ body {
 
   margin-top: 3rem;
   padding: 1rem;
-
-  margin: 0 auto;
+  margin-left: 0.5rem;
 }
 
 svg {
@@ -132,7 +131,7 @@ svg {
   transform-origin: center;
 }
 .progress-description {
-  font-size: 1.2rem;
+  font-size: 10px;
   font-weight: 600;
 }
 table {
@@ -181,7 +180,7 @@ label {
   justify-content: space-between;
   flex-direction: column;
   gap: 2rem;
-  margin-right: 5rem;
+  margin-left: 2.5rem;
 }
 input {
   border: 1px solid black;
@@ -270,8 +269,173 @@ input::placeholder {
   color: white !important;
   font-size: 18px;
 }
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
   .product-description {
     font-size: 0.8rem;
   }
-}
+} */
+
+/* @media only screen and (max-width: 1024px) {
+  .container {
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .btn-goal {
+    padding: 8px;
+  }
+
+  .btn {
+    width: 80px;
+    height: 28px;
+    font-size: 12px;
+  }
+
+  .progress-container {
+    gap: 15px;
+  }
+
+  svg {
+    width: 100px;
+    height: 100px;
+  }
+
+  .progress-text {
+    font-size: 1.2rem;
+  }
+
+  .input-container {
+    width: 90%;
+  }
+
+  .field label {
+    font-size: 1rem;
+  }
+
+  input {
+    width: 80%;
+    padding: 5px;
+    font-size: 12px;
+  }
+
+  .info-box {
+    width: 280px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  .info-box i {
+    font-size: 16px;
+  }
+} */
+
+/* @media only screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .btn-goal {
+    justify-content: space-evenly;
+  }
+
+  .btn {
+    width: 70px;
+    height: 26px;
+    font-size: 11px;
+  }
+
+  .progress-container {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  svg {
+    width: 90px;
+    height: 90px;
+  }
+
+  .progress-text {
+    font-size: 1rem;
+  }
+
+  .input-container {
+    width: 95%;
+  }
+
+  .field label {
+    font-size: 0.9rem;
+  }
+
+  input {
+    width: 90%;
+    font-size: 11px;
+  }
+
+  .info-box {
+    width: 250px;
+    height: 55px;
+    font-size: 12px;
+  }
+
+  .info-box i {
+    font-size: 14px;
+  }
+} */
+
+/* @media only screen and (max-width: 480px) {
+  .container {
+    padding: 10px;
+  }
+
+  .btn-goal {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .btn {
+    width: 65px;
+    height: 60px;
+    font-size: 10px;
+  }
+
+  .progress-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  svg {
+    width: 80px;
+    height: 80px;
+  }
+
+  .progress-text {
+    font-size: 0.9rem;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .field label {
+    font-size: 0.8rem;
+  }
+
+  input {
+    width: 95%;
+    font-size: 10px;
+  }
+
+  .info-box {
+    width: 230px;
+    height: 50px;
+    font-size: 11px;
+  }
+
+  .info-box i {
+    font-size: 12px;
+  }
+} */
