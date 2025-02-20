@@ -222,7 +222,7 @@ input::placeholder {
 
 .progress-text {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 900;
   fill: #333;
   text-anchor: middle;
 }
