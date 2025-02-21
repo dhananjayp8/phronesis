@@ -278,10 +278,10 @@ tr {
   .info-box {
     width: 250px;
   }
-  .progress-container {
+  /* .progress-container {
     width: 90%;
     margin: 1rem auto;
-  }
+  } */
   .progress-wrapper {
     width: 200px;
   }
