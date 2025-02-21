@@ -425,7 +425,7 @@ td {
     font-size: 1.2rem;
   }
   .info-box {
-    width: 320px;
+    width: 240px;
     padding: 8px;
   }
   .field label {
@@ -476,9 +476,9 @@ td {
   .field input {
     width: 150px;
   }
-  .info-box {
+  /* .info-box {
     width: 260px;
-  }
+  } */
 }
 
 @media (max-width: 600px) {
