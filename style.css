@@ -282,8 +282,36 @@ tr {
     width: 90%;
     margin: 1rem auto;
   } */
-  .progress-wrapper {
+  /* .progress-wrapper {
     width: 200px;
+  } */
+  @media (max-width: 600px) {
+    .progress-wrapper {
+      width: 80px;
+      height: 100px;
+    }
+
+    svg {
+      width: 80px;
+      height: 100px;
+    }
+
+    .progress-bg,
+    .progress {
+      r: 40; /* Reduce the circle radius */
+      cx: 40;
+      cy: 40;
+    }
+
+    .progress-text {
+      font-size: 12px;
+      x: 40;
+      y: 45;
+    }
+
+    .progress-description {
+      font-size: 12px;
+    }
   }
 }
 
