@@ -21,10 +21,11 @@ body {
 .btn-goal {
   display: flex;
   justify-content: space-around;
-
+  width: 90%;
+  margin: 2rem auto;
   padding: 10px;
   border-radius: 10px;
-  margin-bottom: 2rem;
+  /* margin-bottom: 2rem; */
 }
 
 .btn1 {
@@ -86,11 +87,10 @@ body {
   display: flex;
   justify-content: space-around;
 
-  width: 100%;
-
-  margin-top: 3rem;
+  width: 90%;
+  margin: 2rem auto;
   padding: 1rem;
-  margin-left: 0.5rem;
+  /* margin-left: 0.5rem; */
 }
 
 svg {
@@ -177,16 +177,17 @@ label {
 }
 .inner-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
+  width: 93%;
   gap: 2rem;
-  margin-left: 2.5rem;
+  margin: 2rem auto;
 }
 input {
   border: 1px solid black;
   padding: 5px;
   border-radius: 10px;
-  width: 410px;
+  width: 300px;
 }
 input::placeholder {
   color: #4f4f4f;
@@ -241,7 +242,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 310px;
+  width: 370px;
   height: 70px;
   background-color: #0a53a3;
   border-radius: 15px;
@@ -268,6 +269,10 @@ input::placeholder {
 .info-box i {
   color: white !important;
   font-size: 18px;
+}
+tr {
+  width: 93%;
+  margin: 2rem auto;
 }
 /* @media only screen and (max-width: 600px) {
   .product-description {
