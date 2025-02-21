@@ -280,7 +280,7 @@ tr {
 }
 @media only screen and (max-width: 600px) {
   .info-box {
-    width: 320px;
+    width: 250px;
   }
 
   @media (max-width: 600px) {
