@@ -460,6 +460,9 @@ td {
   .progress-text {
     font-size: 1.2rem;
   }
+  .field input {
+    width: 200px;
+  }
 }
 
 @media (max-width: 600px) {
