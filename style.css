@@ -313,3 +313,39 @@ tr {
     text-align: center;
   }
 }
+@media (max-width: 768px) {
+  .progress-container {
+    justify-content: center; /* Center align progress bars */
+    gap: 20px;
+  }
+  .progress-circle {
+    width: 100px;
+    height: 100px;
+  }
+  .progress-circle::before {
+    width: 80px;
+    height: 80px;
+  }
+  .progress-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .progress-container {
+    flex-direction: row; /* Keep row-wise alignment */
+    justify-content: center;
+    gap: 15px;
+  }
+  .progress-circle {
+    width: 90px;
+    height: 90px;
+  }
+  .progress-circle::before {
+    width: 70px;
+    height: 70px;
+  }
+  .progress-text {
+    font-size: 1rem;
+  }
+}
