@@ -409,7 +409,8 @@ td {
     width: 100%;
   }
   table {
-    width: 100%;
+    width: 100%; /* Adjust width to create margin */
+    margin: 0 auto;
   }
 
   td {
@@ -476,9 +477,6 @@ td {
   .field input {
     width: 150px;
   }
-  /* .info-box {
-    width: 260px;
-  } */
 }
 
 @media (max-width: 600px) {
