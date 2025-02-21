@@ -29,7 +29,6 @@ body {
   margin: 2rem auto;
   padding: 10px;
   border-radius: 10px;
-  /* margin-bottom: 2rem; */
 }
 
 .btn1 {
@@ -90,53 +89,65 @@ body {
 .progress-container {
   display: flex;
   justify-content: space-around;
-
   width: 90%;
   margin: 2rem auto;
   padding: 1rem;
-  /* margin-left: 0.5rem; */
 }
 
-svg {
+/* Each Progress Wrapper */
+.progress-wrapper {
+  text-align: center;
   position: relative;
+}
+
+/* Circular Progress Bar */
+.progress-circle {
   width: 120px;
   height: 120px;
+  position: relative;
+  border-radius: 50%;
+  background: conic-gradient(
+    #00b0f0 0deg,
+    #00b0f0 var(--progress),
+    #ddd var(--progress) 360deg
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.progress-bg {
-  fill: none;
-  stroke: #ddd;
-  stroke-width: 10;
-}
-
-.progress {
-  fill: none;
-  stroke: #00b0f0;
-  stroke-width: 10;
-  stroke-linecap: round;
-  stroke-dasharray: 314;
-  transition: stroke-dashoffset 1s ease-out;
+.progress-circle::before {
+  content: "";
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: white;
+  border-radius: 50%;
 }
 
 .progress-text {
+  position: absolute;
   font-size: 1.5rem;
   font-weight: 800;
-  /* fill: #333; */
+  color: black;
   text-anchor: middle;
 }
-.progress-text-below {
-  font-size: 10px;
-  font-weight: 500;
-  margin-top: 2px;
-}
 
-.progress-container svg:first-child .progress {
-  transform: rotate(-190deg);
-  transform-origin: center;
-}
 .progress-description {
   font-size: 10px;
   font-weight: 600;
+  margin-top: 8px;
+  color: black;
+}
+
+.progress-20 {
+  --progress: calc(314deg * 0.3);
+}
+.progress-75 {
+  --progress: calc(314deg * 0.75);
+}
+.progress-90 {
+  --progress: calc(314deg * 0.9);
 }
 table {
   width: 100%;
@@ -230,10 +241,12 @@ input::placeholder {
   fill: #333;
   text-anchor: middle;
 }
+.progress-container {
+  margin-bottom: 2rem;
+}
 .product-description {
   color: #4f4f4f;
   font-size: 1rem;
-  font-family: "Inter", sans-serif;
   font-weight: 700;
   line-height: 18px;
   text-align: center;
