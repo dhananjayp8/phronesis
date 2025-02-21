@@ -251,6 +251,7 @@ input::placeholder {
   padding: 8px;
   border: 1px solid black;
   border-radius: 10px;
+  width: 250px;
 }
 
 .progress-table-container {
@@ -408,7 +409,7 @@ td {
 
 @media (max-width: 600px) {
   .info-box {
-    width: 250px;
+    width: 280px;
   }
   .progress-wrapper {
     width: 80px;
