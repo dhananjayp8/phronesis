@@ -296,9 +296,9 @@ tr {
       height: 100px;
     }
 
-    .progress-bg,
+    /* .progress-bg,
     .progress {
-      r: 40; /* Reduce the circle radius */
+      r: 40; 
       cx: 40;
       cy: 40;
     }
@@ -307,7 +307,7 @@ tr {
       font-size: 12px;
       x: 40;
       y: 45;
-    }
+    } */
 
     .progress-description {
       font-size: 12px;
