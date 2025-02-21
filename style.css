@@ -237,7 +237,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  width: 100%;
+  width: 90%;
 }
 
 .field label {
@@ -247,11 +247,11 @@ input::placeholder {
 
 /* Input Styling */
 .field input {
-  flex: 1; /* Makes the input take the remaining space */
+  flex: 1;
   padding: 8px;
   border: 1px solid black;
   border-radius: 10px;
-  width: 180px;
+  width: 300px;
 }
 
 .progress-table-container {
