@@ -303,7 +303,7 @@ input::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 280px;
+  width: 200px;
   height: 70px;
   background-color: #0a53a3;
   border-radius: 15px;
@@ -357,8 +357,8 @@ td {
 
 /* Progress Circle */
 .progress-circle {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   position: relative;
   display: flex;
@@ -409,7 +409,11 @@ td {
 
 @media (max-width: 600px) {
   .info-box {
-    width: 280px;
+    width: 250px;
+    padding: 8px;
+  }
+  .field label {
+    font-size: 1rem;
   }
   .progress-wrapper {
     width: 80px;
@@ -427,6 +431,10 @@ td {
     font-size: 15px;
     text-align: center;
   }
+  .progress-circle {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -435,8 +443,9 @@ td {
     gap: 20px;
   }
   .progress-circle {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
+    font-size: 1rem;
   }
   .progress-circle::before {
     width: 80px;
@@ -462,6 +471,7 @@ td {
     height: 70px;
   }
   .progress-text {
-    font-size: 1rem;
+    font-size: 1.4rem;
+    font-weight: 800;
   }
 }
