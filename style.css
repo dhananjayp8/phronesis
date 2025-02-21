@@ -426,9 +426,9 @@ td:last-child {
     font-size: 1.2rem;
   }
   .info-box {
-    width: 280px;
+    width: 260px;
     padding: 8px;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
   }
   .field label {
     font-size: 1rem;
