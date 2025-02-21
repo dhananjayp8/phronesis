@@ -278,26 +278,25 @@ tr {
   width: 93%;
   margin: 2rem auto;
 }
-@media only screen and (max-width: 600px) {
+
+@media (max-width: 600px) {
   .info-box {
     width: 250px;
   }
+  .progress-wrapper {
+    width: 80px;
+    height: 100px;
+    margin-bottom: 2rem;
+    margin-right: 1rem;
+  }
 
-  @media (max-width: 600px) {
-    .progress-wrapper {
-      width: 80px;
-      height: 100px;
-      margin-bottom: 2rem;
-    }
+  svg {
+    width: 100px;
+    height: 100px;
+  }
 
-    svg {
-      width: 100px;
-      height: 100px;
-    }
-
-    .progress-description {
-      font-size: 15px;
-      text-align: center;
-    }
+  .progress-description {
+    font-size: 15px;
+    text-align: center;
   }
 }
