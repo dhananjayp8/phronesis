@@ -399,6 +399,9 @@ td {
 
 /* Responsive Styling */
 @media (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
   table {
     width: 100%;
   }
