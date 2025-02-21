@@ -344,6 +344,8 @@ input::placeholder {
 table {
   width: 100%;
   border-collapse: collapse;
+  max-width: 100%; /* Prevents exceeding container */
+  table-layout: fixed; /* Ensures columns don't stretch */
 }
 
 td {
