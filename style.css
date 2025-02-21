@@ -406,6 +406,10 @@ td:last-child {
   .container {
     width: 100%;
   }
+  html,
+  body {
+    overflow-x: hidden;
+  }
   table {
     width: 90%;
     margin: 0 auto;
