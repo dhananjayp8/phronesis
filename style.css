@@ -336,30 +336,19 @@ input::placeholder {
   color: white !important;
   font-size: 18px;
 }
-/* tr {
-  width: 93%;
-  margin: 2rem auto;
-} */
 
 table {
-  width: 100%;
+  width: 90%;
+  margin: 2rem auto;
   border-collapse: collapse;
   max-width: 100%; /* Prevents exceeding container */
   table-layout: fixed; /* Ensures columns don't stretch */
 }
 
 td {
-  /* height: 40px;
-  vertical-align: middle;
-  padding: 5px; */
-  /* width: 50%;  */
   height: 70px;
   padding: 10px;
 }
-/* td {
-  padding: 15px;
-  vertical-align: middle;
-} */
 
 /* Progress Circle Container */
 .progress-table-container {
@@ -403,19 +392,29 @@ td {
   --progress: 50%;
 }
 
+/* td:first-child {
+  width: 80px; 
+  text-align: center;
+  flex-shrink: 0;
+}
+td:last-child {
+  flex-grow: 1; 
+} */
+
 /* Responsive Styling */
 @media (max-width: 768px) {
   .container {
     width: 100%;
   }
   table {
-    width: 100%; /* Adjust width to create margin */
+    width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
   }
 
   td {
     padding: 5px;
+    vertical-align: middle;
   }
 
   .progress-circle {
@@ -427,8 +426,9 @@ td {
     font-size: 1.2rem;
   }
   .info-box {
-    width: 260px;
+    width: 280px;
     padding: 8px;
+    margin-right: 2rem;
   }
   .field label {
     font-size: 1rem;
@@ -477,6 +477,9 @@ td {
   }
   .field input {
     width: 150px;
+  }
+  td:first-child {
+    width: 32%;
   }
 }
 
