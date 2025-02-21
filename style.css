@@ -304,7 +304,7 @@ input::placeholder {
   align-items: center;
   justify-content: space-between;
   width: 200px;
-  height: 70px;
+  height: 100px;
   background-color: #0a53a3;
   border-radius: 15px;
   border: 1px solid #007aff;
@@ -335,15 +335,21 @@ input::placeholder {
   width: 93%;
   margin: 2rem auto;
 } */
+
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
 td {
+  height: 40px;
+  vertical-align: middle;
+  padding: 5px;
+}
+/* td {
   padding: 15px;
   vertical-align: middle;
-}
+} */
 
 /* Progress Circle Container */
 .progress-table-container {
@@ -405,9 +411,6 @@ td {
   .progress-text {
     font-size: 1.2rem;
   }
-}
-
-@media (max-width: 600px) {
   .info-box {
     width: 250px;
     padding: 8px;
@@ -435,6 +438,9 @@ td {
     width: 50px;
     height: 50px;
   }
+}
+
+@media (max-width: 600px) {
 }
 
 @media (max-width: 768px) {
