@@ -280,6 +280,7 @@ tr {
   }
   .progress-container {
     width: 85%;
+    margin: 1rem auto;
   }
 }
 
