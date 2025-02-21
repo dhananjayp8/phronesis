@@ -146,10 +146,13 @@ body {
 .progress-75 {
   --progress: calc(314deg * 0.75);
 }
+/* .progress-80 {
+  --progress: calc(314deg * 0.8);
+} */
 .progress-90 {
   --progress: calc(314deg * 0.9);
 }
-table {
+/* table {
   width: 100%;
   border-collapse: collapse;
 }
@@ -175,8 +178,8 @@ table {
 }
 td {
   cursor: pointer;
-}
-.inner-container {
+} */
+/* .inner-container {
   width: 80%;
   margin: 1rem auto;
 }
@@ -210,7 +213,46 @@ input::placeholder {
   font-weight: 600;
   padding: 5px;
   opacity: 1;
+} */
+.input-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
+/* Inner Container */
+.inner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* Field Styling */
+.field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}
+
+.field label {
+  width: 150px; /* Ensures uniform label width */
+  font-weight: 600;
+}
+
+/* Input Styling */
+.field input {
+  flex: 1; /* Makes the input take the remaining space */
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
 .progress-table-container {
   display: flex;
   justify-content: center;
@@ -255,6 +297,7 @@ input::placeholder {
   font-size: 1rem;
   font-weight: 800;
 }
+
 .info-box {
   display: flex;
   align-items: center;
@@ -287,9 +330,80 @@ input::placeholder {
   color: white !important;
   font-size: 18px;
 }
-tr {
+/* tr {
   width: 93%;
   margin: 2rem auto;
+} */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td {
+  padding: 15px;
+  vertical-align: middle;
+}
+
+/* Progress Circle Container */
+.progress-table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+/* Progress Circle */
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background: conic-gradient(#00b0f0 var(--progress), #ddd 0%);
+}
+
+/* Progress Text */
+.progress-text {
+  position: absolute;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #000;
+}
+
+/* Different Progress Levels */
+.progress-80 {
+  --progress: 80%;
+}
+
+.progress-50 {
+  --progress: 50%;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  .progress-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .progress-text {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 600px) {
@@ -313,9 +427,10 @@ tr {
     text-align: center;
   }
 }
+
 @media (max-width: 768px) {
   .progress-container {
-    justify-content: center; /* Center align progress bars */
+    justify-content: center;
     gap: 20px;
   }
   .progress-circle {
@@ -333,7 +448,7 @@ tr {
 
 @media (max-width: 600px) {
   .progress-container {
-    flex-direction: row; /* Keep row-wise alignment */
+    flex-direction: row;
     justify-content: center;
     gap: 15px;
   }
