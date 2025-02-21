@@ -3,6 +3,9 @@
   padding: 0;
   font-family: "Avenir", "Avenir Next", sans-serif;
 }
+html {
+  overflow-x: hidden;
+}
 body {
   background-image: url(./images/logo.PNG);
   background-position: center center;
