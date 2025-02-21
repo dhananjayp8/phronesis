@@ -274,11 +274,11 @@ tr {
   width: 93%;
   margin: 2rem auto;
 }
-/* @media only screen and (max-width: 600px) {
-  .product-description {
-    font-size: 0.8rem;
+@media only screen and (max-width: 600px) {
+  .info-box {
+    width: 250px;
   }
-} */
+}
 
 /* @media only screen and (max-width: 1024px) {
   .container {
