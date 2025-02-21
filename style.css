@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: rgba(255, 255, 255, 0.19);
+  height: 100vh;
 }
 
 .container {
@@ -16,6 +17,9 @@ body {
   height: 100vh;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .btn-goal {
