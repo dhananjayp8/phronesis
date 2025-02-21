@@ -349,9 +349,12 @@ table {
 }
 
 td {
-  height: 40px;
+  /* height: 40px;
   vertical-align: middle;
-  padding: 5px;
+  padding: 5px; */
+  width: 50%; /* Equal width for both columns */
+  height: 70px;
+  padding: 10px;
 }
 /* td {
   padding: 15px;
