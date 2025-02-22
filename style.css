@@ -428,13 +428,41 @@ td {
   }
 }
 @media (max-width: 400px) {
-  /* Reduce button size */
   .btn-goal .btn {
     font-size: 12px;
     padding: 5px 8px;
+    margin: 3px;
+  }
+  table {
+    width: 100%;
   }
 
-  /* Reduce progress container size */
+  td {
+    font-size: 12px;
+    padding: 3px;
+    word-wrap: break-word;
+    max-width: 90px;
+  }
+  td:first-child {
+    width: 30%;
+  }
+
+  td:nth-child(2) {
+    width: 65%;
+  }
+  .info-box {
+    width: 200px;
+  }
+  .field label {
+    font-size: 0.9rem;
+  }
+  input::placeholder {
+    font-size: 0.8rem;
+  }
+  .field input {
+    flex: 1;
+  }
+  /* 
   .progress-container {
     gap: 10px;
   }
@@ -447,6 +475,25 @@ td {
   .progress-circle {
     width: 55px;
     height: 55px;
+    border-width: 5px;
+    background: conic-gradient(#00b0f0 var(--progress), #ddd 0%);
+    background: conic-gradient(#00b0f0 var(--progress), #ddd 0%);
+  }
+
+  .progress-circle::before {
+    content: "";
+    position: absolute;
+    width: 65px; 
+    height: 65px;
+    background: white; 
+    border-radius: 50%;
+  }
+  .progress-circle::before {
+    width: 50px;
+    height: 50px;
+  }
+  .progress-circle .progress {
+    stroke-width: 4px !important; 
   }
 
   .progress-text {
@@ -457,7 +504,6 @@ td {
     font-size: 12px;
   }
 
-  /* Reduce input fields */
   .input-container {
     padding: 8px;
   }
@@ -466,8 +512,10 @@ td {
     font-size: 12px;
     padding: 5px;
   }
+  .field label {
+    font-size: 0.9rem;
+  }
 
-  /* Reduce table sizes */
   table {
     width: 100%;
   }
@@ -489,4 +537,23 @@ td {
   .goal-box {
     font-size: 12px;
   }
+  .info-box {
+    width: 180px;
+    font-size: 0.3rem;
+    padding: 2px;
+  }
+  .progress-container {
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .progress-circle {
+    width: 70px;
+    height: 70px;
+  }
+
+  .progress-text {
+    font-size: 1.2rem;
+  } */
 }
