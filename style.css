@@ -18,7 +18,9 @@ body {
   height: 100vh;
   /* overflow-x: hidden; */
 }
-
+.spacer {
+  height: 4rem;
+}
 .container {
   width: 100%;
   max-width: 100%;
@@ -423,5 +425,68 @@ td {
   .progress-text {
     font-size: 1.4rem;
     font-weight: 800;
+  }
+}
+@media (max-width: 400px) {
+  /* Reduce button size */
+  .btn-goal .btn {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  /* Reduce progress container size */
+  .progress-container {
+    gap: 10px;
+  }
+
+  .progress-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .progress-circle {
+    width: 55px;
+    height: 55px;
+  }
+
+  .progress-text {
+    font-size: 12px;
+  }
+
+  .progress-description {
+    font-size: 12px;
+  }
+
+  /* Reduce input fields */
+  .input-container {
+    padding: 8px;
+  }
+
+  .input-container input {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  /* Reduce table sizes */
+  table {
+    width: 100%;
+  }
+
+  .progress-table-container {
+    width: 55px;
+    height: 55px;
+  }
+
+  .info-box {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .info-box .icons {
+    font-size: 14px;
+  }
+
+  .goal-box {
+    font-size: 12px;
   }
 }
