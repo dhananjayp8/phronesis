@@ -50,7 +50,8 @@ body {
   border: 0;
   box-sizing: border-box;
   border-radius: 37px;
-  background-color: #0a53a3;
+  /* background-color: #0a53a3; */
+  background-color: #0168ab;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -197,13 +198,60 @@ body {
   border-radius: 10px;
   width: 300px;
 }
-
+.edit-icon {
+  font-size: 2rem;
+  cursor: pointer;
+}
 .progress-table-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 70px;
   height: 70px;
+}
+.progress-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+  background: conic-gradient(#00b0f0 var(--progress, 0%), #ddd 0%);
+  transition: background 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.progress-text {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-container {
+  margin-top: 10px;
+  width: 120px;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #007bff;
 }
 
 .progress-bg {
@@ -275,7 +323,7 @@ body {
   font-size: 18px;
 }
 
-table {
+/* table {
   width: 90%;
   margin: 2rem auto;
   border-collapse: collapse;
@@ -286,7 +334,7 @@ table {
 td {
   height: 70px;
   padding: 10px;
-}
+} */
 
 .progress-table-container {
   display: flex;
@@ -296,8 +344,136 @@ td {
   height: 100px;
   position: relative;
 }
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  accent-color: #00b0f0; /* Blue checkbox */
+}
+.next {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.next button {
+  background-color: #0a53a3;
+  width: 100px;
+  padding: 0.5rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+}
+.table-container {
+  width: 80%;
+  max-width: 800px;
+  background: #0168ab;
+  color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin: 2rem auto;
+}
 
-.progress-circle {
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+th {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+tr:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transition: 0.3s ease-in-out;
+}
+
+td {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+/* Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background: #0168ab; /* Same color as table */
+  color: white; /* Text white for visibility */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+  z-index: 1000;
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: white;
+}
+
+/* Close Button */
+.close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border: none;
+  background: none;
+}
+
+.close-btn:hover {
+  color: #ff4d4d;
+}
+
+/* Modal Content */
+.modal-body p {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 10px 0;
+  color: white;
+}
+
+/* Overlay Background */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* .progress-circle {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -309,7 +485,7 @@ td {
   font-weight: bold;
   color: #fff;
   background: conic-gradient(#00b0f0 var(--progress), #ddd 0%);
-}
+} */
 
 .progress-text {
   position: absolute;
@@ -325,6 +501,30 @@ td {
 .progress-50 {
   --progress: 50%;
 }
+.progress-10 {
+  --progress: 10%;
+}
+.progress-20 {
+  --progress: 20%;
+}
+.progress-30 {
+  --progress: 30%;
+}
+.progress-40 {
+  --progress: 40%;
+}
+.progress-60 {
+  --progress: 60%;
+}
+.progress-70 {
+  --progress: 70%;
+}
+.progress-90 {
+  --progress: 90%;
+}
+.progress-100 {
+  --progress: 100%;
+}
 
 @media (max-width: 768px) {
   .container {
@@ -334,7 +534,7 @@ td {
   body {
     overflow-x: hidden;
   }
-  table {
+  /* table {
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
@@ -343,8 +543,22 @@ td {
   td {
     padding: 5px;
     vertical-align: middle;
+  } */
+  .table-container {
+    width: 95%;
   }
-
+  th,
+  td {
+    padding: 12px;
+    font-size: 15px;
+  }
+  .modal {
+    width: 85%;
+    max-width: 350px;
+  }
+  .modal-body p {
+    font-size: 14px;
+  }
   .progress-circle {
     width: 70px;
     height: 70px;
@@ -425,6 +639,29 @@ td {
   .progress-text {
     font-size: 1.4rem;
     font-weight: 800;
+  }
+  .table-container {
+    width: 90%;
+    border-radius: 0;
+  }
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 10px;
+    font-size: 13px;
+  }
+  .modal {
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+  }
+  .modal-header h3 {
+    font-size: 18px;
+  }
+  .modal-body p {
+    font-size: 13px;
   }
 }
 @media (max-width: 400px) {
@@ -557,3 +794,42 @@ td {
     font-size: 1.2rem;
   } */
 }
+
+/* .progress-text {
+  position: absolute;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000;
+  background: white;
+  border-radius: 50%;
+  padding: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1 / 1;
+} */
+
+/* Responsive Fixes */
+/* @media (max-width: 768px) {
+  .progress-circle {
+    width: 50px;
+    height: 50px;
+    border-width: 5px;
+  }
+  .progress-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .progress-circle {
+    width: 45px;
+    height: 45px;
+    border-width: 4px;
+  }
+  .progress-text {
+    font-size: 0.9rem;
+  }
+} */
