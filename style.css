@@ -45,15 +45,13 @@ body {
 .tab ul {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 .tab ul li {
   cursor: pointer;
   font-size: 0.9rem;
   font-weight: 800;
-  /* word-break: break-word; */
-  /* word-wrap: break-word; */
   align-items: center;
-  text-decoration: none;
 }
 .btn-goal {
   display: flex;
