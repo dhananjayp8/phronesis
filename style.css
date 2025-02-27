@@ -45,6 +45,7 @@ body {
 .tab ul {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
 }
 .tab ul li {
   cursor: pointer;
