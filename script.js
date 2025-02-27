@@ -34,21 +34,50 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("overlay").addEventListener("click", closeModal); // ✅ Clicking overlay closes modal
 });
 // Function to show the modal with row data
+// function showRowData(row) {
+//   const headers = document.querySelectorAll("#data-table thead th");
+//   const cells = row.getElementsByTagName("td");
+
+//   let outputHtml = "";
+//   headers.forEach((header, index) => {
+//     outputHtml += `<p><strong>${header.innerText}:</strong> ${cells[index].innerText}</p>`;
+//   });
+
+//   document.getElementById("modal-content").innerHTML = outputHtml;
+//   document.getElementById("modal").style.display = "block";
+//   document.getElementById("overlay").style.display = "block";
+// }
+
+// function closeModal() {
+//   document.getElementById("modal").style.display = "none";
+//   document.getElementById("overlay").style.display = "none";
+// }
+
 function showRowData(row) {
   const headers = document.querySelectorAll("#data-table thead th");
   const cells = row.getElementsByTagName("td");
 
-  let outputHtml = "";
+  let queryParams = [];
   headers.forEach((header, index) => {
-    outputHtml += `<p><strong>${header.innerText}:</strong> ${cells[index].innerText}</p>`;
+    queryParams.push(
+      `${header.innerText}=${encodeURIComponent(cells[index].innerText)}`
+    );
   });
 
-  document.getElementById("modal-content").innerHTML = outputHtml;
-  document.getElementById("modal").style.display = "block";
-  document.getElementById("overlay").style.display = "block";
+  window.location.href = `modal.html?${queryParams.join("&")}`;
+}
+function getQueryParams() {
+  const params = new URLSearchParams(window.location.search);
+  let detailsHTML = "";
+  params.forEach((value, key) => {
+    detailsHTML += `<p><strong>${key}:</strong> ${value}</p>`;
+  });
+  document.getElementById("modal-content").innerHTML = detailsHTML;
 }
 
-function closeModal() {
-  document.getElementById("modal").style.display = "none";
-  document.getElementById("overlay").style.display = "none";
+function goBack() {
+  window.history.back();
 }
+
+// Load data when page loads
+window.onload = getQueryParams;

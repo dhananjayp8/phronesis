@@ -21,10 +21,25 @@
     <div class="container">
       <div class="spacer"></div>
       <!-- <div class="btn-goal">
-        <button class="btn1 btn">All</button>
-        <button class="btn2 btn">Active</button>
-        <button class="btn3 btn">Inactive</button>
+        <button class="btn1 btn">My Progress</button>
+        <button class="btn2 btn">All Goals</button>
+        <button class="btn3 btn">Active Goals</button>
+       
       </div> -->
+      <div class="tab">
+        <ul>
+          <li>My <br />Progress</li>
+          <li>
+            All<br />
+            Goals
+          </li>
+          <li>
+            Active <br />
+            Goals
+          </li>
+          <li>Inactive <br />Goals</li>
+        </ul>
+      </div>
       <div class="progress-container">
         <div class="progress-wrapper">
           <div class="progress-circle progress-20">
@@ -46,9 +61,9 @@
           </div>
           <p class="progress-description">Time in Flow State</p>
         </div>
-        <div class="progress-wrapper">
+        <!-- <div class="progress-wrapper">
           <i class="fas fa-edit edit-icon"></i>
-        </div>
+        </div> -->
       </div>
 
       <div class="input-container">
@@ -67,13 +82,39 @@
             <input type="text" placeholder="Write Success Stories" />
             <!-- <i class="fas fa-edit edit-icon"></i> -->
           </div>
+          <div class="progress-btn1">
+            <button>Edit Progress</button>
+          </div>
+          <div class="slider">
+            <div class="inner-slider slider-img">
+              <img src="./images/slider.jpg" />
+            </div>
+            <div class="inner-slider">
+              <label for=""
+                >Stress<br />
+                Level</label
+              >
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div>
+            <div class="inner-slider">
+              <label for="">Focus <br />Quality</label>
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div>
+            <div class="inner-slider">
+              <label for="">Time in <br />Flow State</label>
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div>
+
+            <!-- <div class="inner-slider">
+              <label for="">Time in <br />Flow State</label>
+              <input type="range" id="input-slider" min="1" max="9" />
+            </div> -->
+          </div>
+          <div class="slider-btn">
+            <button>Save</button>
+            <button>Cancel</button>
+          </div>
         </div>
-      </div>
-      <div class="btn-goal">
-        <button class="btn1 btn">All</button>
-        <button class="btn2 btn">Active</button>
-        <button class="btn3 btn">Inactive</button>
-        <button class="btn1 btn">Add goal</button>
       </div>
 
       <!-- <table>
@@ -137,46 +178,53 @@
           <td></td>
         </tr>
       </table> -->
-      <div class="table-container">
-        <table id="data-table">
-          <thead>
-            <tr>
-              <th>Focus Area</th>
-              <th>Goals</th>
-              <th>Effectiveness</th>
-              <th>Adherence</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr onclick="showRowData(this)">
-              <td>X</td>
-              <td>Dummy text</td>
-              <td>1</td>
-              <td>2</td>
-            </tr>
-            <tr onclick="showRowData(this)">
-              <td>Y</td>
-              <td>Dummy text</td>
-              <td>6</td>
-              <td>8</td>
-            </tr>
-            <tr onclick="showRowData(this)">
-              <td>Z</td>
-              <td>Dummy text</td>
-              <td>3</td>
-              <td>4</td>
-            </tr>
-          </tbody>
-        </table>
+
+      <div class="tb-container">
+        <div class="btn-goal1">
+          <button>+ &nbsp; New Goals</button>
+        </div>
+        <div class="table-container">
+          <table id="data-table">
+            <thead>
+              <tr>
+                <th>Focus Area</th>
+                <th>Goals</th>
+                <th>Effectiveness</th>
+                <th>Adherence</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr onclick="showRowData(this)">
+                <td>Recovery Management</td>
+                <td>Achieve 2-3 hours of focused deep work daily</td>
+                <td>1</td>
+                <td>2</td>
+              </tr>
+              <tr onclick="showRowData(this)">
+                <td>Flow State Optimization</td>
+                <td>Create optimal environment for flow states</td>
+                <td>6</td>
+                <td>8</td>
+              </tr>
+              <tr onclick="showRowData(this)">
+                <td>Flow State Optimization</td>
+                <td>Use clear goals and immediate feedback in daily work</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
-      <div class="overlay" id="overlay" onclick="closeModal()"></div>
+
+      <!-- <div class="overlay" id="overlay" onclick="closeModal()"></div>
       <div class="modal" id="modal">
         <div class="modal-header">
           <h3>Details</h3>
           <button class="close-btn" onclick="closeModal()">×</button>
         </div>
         <div class="modal-body" id="modal-content"></div>
-      </div>
+      </div> -->
       <div class="spacer"></div>
     </div>
     <script src="script.js"></script>
