@@ -45,7 +45,6 @@ body {
 .tab ul {
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
 }
 .tab ul li {
   cursor: pointer;
@@ -54,6 +53,7 @@ body {
   /* word-break: break-word; */
   /* word-wrap: break-word; */
   align-items: center;
+  text-decoration: none;
 }
 .btn-goal {
   display: flex;
